@@ -11,7 +11,7 @@ def apply_coupons(cart, coupons)
     cart_item = find_item_by_name_in_collection(coupons[counter][:item], cart)
     couponed_item_name = "#{coupons[counter][:item]} W/COUPON"
     
-    cart_item_w_coupon = 
+    cart_item_w_coupon = co
     counter += 1
   end
 end
