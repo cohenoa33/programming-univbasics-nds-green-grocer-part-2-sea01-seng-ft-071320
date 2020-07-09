@@ -48,6 +48,7 @@ def apply_clearance(cart)
     counter += 1
   end
   array_with_clearance
+  binding.pry
 end
 
 def checkout(cart, coupons)
