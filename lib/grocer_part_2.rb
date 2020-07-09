@@ -43,10 +43,11 @@ def apply_clearance(cart)
       cart[counter][:price] = (cart[counter][:price] *.80).round(2)
       array_with_clearance << cart[counter]
     else 
-    
+      array_with_clearance << cart[counter]
     end
     counter += 1
   end
+  array_with_clearance
 end
 
 def checkout(cart, coupons)
