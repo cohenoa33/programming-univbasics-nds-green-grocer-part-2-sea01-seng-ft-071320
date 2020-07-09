@@ -39,14 +39,11 @@ def apply_clearance(cart)
   array_with_clearance  =[]
   
   while counter < cart.length 
-    if cart[counter][:clearance] != true 
-      array_with_clearance << cart[counter]
-        #cart[counter][:price] = (cart[counter][:price] * 20 / 100).round(2)
-       # array_with_clearance << cart[counter]
+    if cart[counter][:clearance] == true 
+        cart[counter][:price] = (cart[counter][:price] * 20 / 100).round(2)
+        array_with_clearance << cart[counter]
     else 
-     # array_with_clearance << cart[counter]
-     cart[counter][:price] = (cart[counter][:price] * 20 / 100).round(2)
-     array_with_clearance << cart[counter]
+        array_with_clearance << cart[counter]
     end
     counter += 1
   end
